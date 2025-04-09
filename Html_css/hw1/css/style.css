@@ -1,0 +1,27 @@
+a { 
+    text-decoration: none;
+} 
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.menu_link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-heading {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+.section-heading {
+    color: coral;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 80px;
+}
