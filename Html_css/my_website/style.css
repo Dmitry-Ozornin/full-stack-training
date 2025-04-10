@@ -1,8 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
     text-decoration: none;
 }
+ body {
+    font-family: Inter, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fff;
+    color: #000;
 
+ }
 .top {
     flex: none;
     order: 0;
