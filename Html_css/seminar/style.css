@@ -1,0 +1,118 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #020A18;
+}
+
+.top_site {
+
+    padding-bottom: 99px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.top_link {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+
+
+
+}
+
+.top_info {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+}
+
+.about {
+
+    width: 608.22px;
+
+}
+
+.title {
+    color: rgb(58, 104, 184);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+.about_header {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.about_text {
+    width: 558px;
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.button_about {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    border-radius: 5px;
+    background: rgb(58, 104, 184);
+    padding: 15px 30px 15px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    font-style: normal;
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+
+
+.footer {
+    margin-top: 194px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+
+}

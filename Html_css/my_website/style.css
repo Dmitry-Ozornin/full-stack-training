@@ -3,54 +3,57 @@
     padding: 0;
     text-decoration: none;
 }
- body {
-    font-family: Inter, sans-serif;
-    scroll-behavior: smooth;
-    background-color: #fff;
-    color: #000;
 
- }
+body {
+    padding-top: 40px;
+
+}
+
+.block {
+    max-width: 1174px;
+    margin: 0 auto;
+
+}
+
 .top {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-top: 84px;
-
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.logo_top {
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 460px;
-}
+.logo_top {}
 
 .top_menu {
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 460px;
+    gap: 14px;
+
 }
 
 .top_menu_link {
-
-    margin: 0px 14px;
-    color: black;
     color: rgb(0, 0, 0);
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0%;
-    text-align: left;
+    padding: 10px;
+
+
 }
 
 .Home {
 
     margin-top: 84px;
     padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+
+}
+
+.home_left {
+    max-width: 556px;
 }
 
 .home_img {
@@ -60,66 +63,65 @@
 
 .home_text {
     color: rgb(136, 136, 136);
-    font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0%;
     text-align: left;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 20px 0px 32px 0px;
+    margin-top: 20px;
+
+
 }
 
 .home_header {
     color: rgb(0, 0, 0);
-    font-family: Inter;
     font-size: 60px;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0%;
-    text-align: left;
+
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-top: 32px;
 }
 
 .home_bytton_start {
     border-radius: 56px;
     border: none;
-    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
-    background: rgb(242, 88, 34);
     padding: 16px 10px 16px 10px;
-    margin: 0px 48px;
     color: rgb(255, 255, 255);
-    font-family: Inter;
     font-size: 16px;
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0%;
-    text-align: left;
-    margin: 32px 0px 0px 0;
+    width: 140px;
+    height: 51px;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+    background: rgb(242, 88, 34);
 
 }
 
 .link_watch_vido {
     color: rgb(170, 170, 170);
-    font-family: Inter;
     font-size: 16px;
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0%;
-    text-align: left;
-    color: rgb(170, 170, 170);
-    padding: 0;
-    margin-top: 48px;
-    margin-bottom: 16px;
-    margin-left: 48px;
+
 }
 
 .footer {
     margin-top: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footer_logo {
