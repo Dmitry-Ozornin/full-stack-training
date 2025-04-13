@@ -6,12 +6,14 @@
 
 body {
     padding-top: 40px;
+    max-width: 1174px;
+    margin: 0 auto;
 
 }
 
 .block {
-    max-width: 1174px;
-    margin: 0 auto;
+    /* max-width: 1174px;
+    margin: 0 auto; */
 
 }
 
@@ -126,4 +128,142 @@ body {
 
 .footer_logo {
     margin-left: 48px;
+}
+
+.block1 {
+
+    text-decoration: none;
+    padding: 100px 0;
+
+}
+
+
+
+.tittle_block1 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.text_block1 {
+
+    margin-top: 18px;
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.link_block1 {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.item_block1_big {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 40px 34px 40px 34px;
+    margin-left: 61px;
+    margin-right: 61px;
+}
+
+.block_choose_us {
+    padding: 100px 0;
+}
+
+.h1_choose {
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.text_chosse {
+    margin-top: 24px;
+    color: rgb(136, 136, 136);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.block_choose_us {
+    padding: 100px 0;
+
+
+}
+
+.blocks_choose {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.item {
+
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 0px 34px 34px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose_title {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.choose_text {
+    margin-top: 16px;
+    color: rgb(102, 102, 102);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.choose_button {
+    border-radius: 56px;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+    background: rgb(242, 88, 34);
+    border: none;
+    padding: 16px 32px 16px 32px;
+    margin-top: 24px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
 }
