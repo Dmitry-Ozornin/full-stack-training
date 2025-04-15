@@ -2,12 +2,15 @@ a {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    
+
+
 
 }
 
+
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+
 }
 
 .center {
@@ -52,27 +55,29 @@ body {
 
 .cover {
     display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
     gap: 64px;
     background: rgb(241, 228, 230);
+
 }
 
 .cover_block {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+    margin-top: 290px;
+    max-height: 92px;
     align-items: center;
 }
 
 .cover_text {
     padding-top: 15px;
 
+
+
 }
 
 .cover_Brand {
     color: rgb(34, 34, 34);
-    font-family: Lato;
+
     font-size: 48px;
     font-weight: 900;
     line-height: 0px;
@@ -82,7 +87,7 @@ body {
 
 .cover_Brand2 {
     color: rgb(34, 34, 34);
-    font-family: Lato;
+
     font-size: 32px;
     font-weight: 700;
     line-height: 0px;
@@ -91,7 +96,7 @@ body {
 }
 
 .cover_Brand3 {
-    font-family: Lato;
+
     font-size: 32px;
     font-weight: 700;
     line-height: 0px;
@@ -99,4 +104,176 @@ body {
     text-align: left;
     color: rgb(241, 109, 127);
 
+}
+
+.sections {
+
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: minmax(180px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 65px;
+
+    background: rgb(255, 255, 255);
+    ;
+
+}
+
+.sections_for_women {
+    background-image: url(img/for_women.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+
+}
+
+.sections_for_men {
+    background-image: url(img/for_men.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+}
+
+.sections_for_kids {
+    background-image: url(img/for_kids.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+}
+
+.sections_for_accesories {
+    background-image: url(img/Group39.svg);
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sections_text {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+
+    text-align: center;
+
+}
+
+.section_names {
+    color: rgb(241, 109, 127);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-align: center;
+
+
+}
+
+.items {
+    margin-top: 96px;
+}
+
+.header_items {
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+
+}
+
+.text_items {
+    color: rgb(159, 159, 159);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+    padding-top: 6px;
+}
+
+.catalog {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: minmax(587px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+
+.product_description {
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: rgb(248, 248, 248);
+    margin: 0px;
+
+}
+
+.header_desperation {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+
+}
+
+.text_desperation {
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+.cost_desperation {
+    color: rgb(241, 109, 127);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+
+
+.button_all_products {
+    border: 1px solid rgb(255, 106, 106);
+    background-color: rgb(255, 255, 255);
+    min-width: 211px;
+    min-height: 47px;
+    display: block;
+    margin: 48.5px auto 95px;
+
+}
+
+.url_all_products {
+    color: rgb(242, 99, 118);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
 }
