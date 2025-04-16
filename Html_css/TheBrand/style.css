@@ -277,3 +277,43 @@ body {
     letter-spacing: 0%;
     text-align: left;
 }
+
+.advantages {
+    background: rgb(34, 34, 36);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.type_of_advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 103px;
+    padding-bottom: 104px;
+    max-width: 359px;
+
+}
+
+.header_adventage {
+    color: rgb(251, 251, 251);
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.text_adventage {
+    color: rgb(251, 251, 251);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
