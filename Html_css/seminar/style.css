@@ -9,6 +9,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
@@ -22,6 +26,7 @@ body {
 .top {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     padding-top: 39px;
     padding-bottom: 39px;
@@ -44,6 +49,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 194px;
+    max-width: 100%;
 }
 
 .about {}
@@ -118,6 +124,7 @@ body {
     flex-direction: row;
     align-content: center;
     align-items: center;
+
 
 }
 
@@ -234,6 +241,46 @@ body {
 
 }
 
+.bottom_about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.bottom_about_info {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.bottom_about_header {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 548px;
+}
+
+
+
+.bottom_about_text {
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+    max-width: 460px;
+
+}
+
+.first_text {
+    margin-top: 40px;
+}
+
 @media (max-width:1024px) {
 
     .center {
@@ -264,18 +311,195 @@ body {
         grid-column: span 1;
         gap: 60px;
 
-    
+
     }
 
     .block_big img {
-       width: 98px;
-    
+        width: 98px;
+
     }
 
     .block_content {
         grid-template-columns: repeat(1, 362px);
         gap: 30px;
     }
+
+    .bottom_about {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        gap: 64px;
+    }
+
+    .bottom_about_info {
+        margin: 0;
+    }
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        gap: 16px;
+        padding-top: 22.5px;
+        padding-bottom: 22.5px;
+    }
+
+    .top_link {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .top_info {
+        margin-top: 64px;
+        max-width: 100%;
+    }
+
+    .about {}
+
+    .title {
+        color: rgb(58, 104, 184);
+
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .about_header {
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .about_text {
+        text-align: center;
+        max-width: 100%;
+        margin-top: 64px;
+    }
+
+    .button_about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 39px;
+    }
+
+    .footer {
+        margin-top: 128px;
+        gap: 32px;
+    }
+
+    .content {
+        margin-top: 204px;
+        gap: 68px;
+    }
+
+    .top_content_title {
+        color: rgb(255, 255, 255);
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
+
+    .top_content_text {
+        color: rgb(255, 255, 255);
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .top_content_button {
+        margin-top: 16px;
+    }
+
+    .top_logo {
+        margin-left: 24px;
+        margin-right: auto;
+    }
+
+    .block_content {
+        margin-top: 64px;
+        grid-template-columns: repeat(1, 362px);
+        gap: 32px;
+    }
+
+    .block1_titlt {
+        color: rgb(255, 255, 255);
+
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .text_block {
+        color: rgb(255, 255, 255);
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .top_logo {
+        margin-left: 24px;
+        margin-right: auto;
+    }
+
+    .bottom_about {
+        
+        margin-left: 9.5px;
+        margin-right: 9.5px;
+        gap: 32px;
+        margin-top: 96px;
+    }
+
+    .bottom_about_header {
+        color: rgb(255, 255, 255);
+        
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .bottom_about_text {
+        text-align: center;
+        margin-top: 16px;
+    }
+
 
 
 
