@@ -15,6 +15,8 @@ body {
 
 }
 
+
+
 .center {
     padding-left: calc(50% - 569px);
     padding-right: calc(50% - 569px);
@@ -32,21 +34,28 @@ body {
 .left_header {
     display: flex;
     gap: 41px;
+    align-items: flex-end;
 }
 
 .header_search {
     background: rgb(34, 34, 34);
     padding: 0px;
     border: none;
-
+    display: flex
 }
 
 .right_header {
     display: flex;
     align-items: center;
     gap: 33px;
+    align-items: flex-end;
 
 }
+
+.right_img_header {
+    display: flex;
+}
+
 
 .menu_button {
     background: rgb(34, 34, 34);
@@ -68,10 +77,12 @@ body {
     margin-top: 290px;
     max-height: 92px;
     align-items: center;
+    max-width: 405px;
 }
 
 .cover_text {
     padding-top: 15px;
+
 
 
 
@@ -128,6 +139,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 260px;
+    
 
 }
 
@@ -326,6 +338,7 @@ body {
     background-image: url(../img/subscribe_background.svg);
     background-repeat: no-repeat;
     background-size: cover;
+   
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -419,6 +432,12 @@ body {
     border: none;
     height: 62.1px;
     width: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 .basement {
@@ -455,5 +474,200 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+@media (max-width: 1024px) {
+
+
+
+
+    .center {
+        padding-left: calc(50% - 496px);
+        padding-right: calc(50% - 496px);
+    }
+
+    .header {
+        padding-top: 19px;
+        padding-bottom: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        gap: 425px;
+        justify-content: center;
+
+    }
+
+    .left_header {
+        gap: 41px;
+    }
+
+    .right_header {
+        align-items: flex-end;
+
+    }
+
+    .cover {
+
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .cover_img {
+        max-width: 370px;
+        max-height: 368px;
+
+    }
+
+    .cover_block {
+        gap: 16px;
+        margin: 0;
+
+
+
+    }
+
+    .cover_Brand {
+        font-size: 44px;
+
+
+
+    }
+
+    .cover_Brand2 {
+        font-size: 24px;
+
+
+    }
+
+    .cover_Brand3 {
+        font-size: 24px;
+
+
+
+    }
+
+    .sections {
+        grid-template-columns: repeat(3, 232px);
+        grid-auto-rows: minmax(116px, auto);
+        grid-column-gap: 18px;
+        grid-row-gap: 19px;
+        justify-content: center;
+    }
+
+    .sections_for_women {
+        height: 167px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+
+
+
+        
+    }
+
+    .sections_for_men {
+        height: 167px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        
+    }
+
+    .sections_for_kids {
+        height: 167px;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+
+    .sections_for_accesories {
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    .items {
+        margin-top: 110px;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 360px);
+        grid-auto-rows: minmax(581px, auto);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        justify-content: center;
+        margin-top: 74px;
+
+    }
+
+    .button_all_products {
+        min-width: 212px;
+        min-height: 48px;
+        margin-top: 32px;
+
+    }
+
+    .advantages {
+        margin-top: 64px;
+        gap: 48px;
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .type_of_advantage {
+        padding: 0;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 52px;
+        padding-bottom: 219px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .subscribe_block {
+        margin: 0;
+    }
+
+    .newsletter_block {
+        margin: 0;
+    }
+
+    .newsletter_form {
+        margin-top: 27px;
+    }
+
+
+    .email_input {
+
+        min-width: 150px;
+        height: 40px;
+
+        border-start-start-radius: 30px;
+        border-end-start-radius: 30px;
+    }
+
+    .button_newsletter {
+
+        height: 52.94px;
+    }
+
+    .basement {
+        justify-content: center;
+        gap: 316px;
+    }
+
+
+
+
 
 }
