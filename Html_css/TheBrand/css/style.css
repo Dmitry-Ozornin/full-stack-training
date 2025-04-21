@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
 
+
 }
 
 .left_header {
@@ -139,7 +140,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 260px;
-    
+
 
 }
 
@@ -338,7 +339,7 @@ body {
     background-image: url(../img/subscribe_background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -482,6 +483,7 @@ body {
 
 
 
+
     .center {
         padding-left: calc(50% - 496px);
         padding-right: calc(50% - 496px);
@@ -493,8 +495,8 @@ body {
         padding-left: 32px;
         padding-right: 32px;
         display: flex;
-        gap: 425px;
-        justify-content: center;
+
+        justify-content: space-between;
 
     }
 
@@ -560,32 +562,32 @@ body {
         height: 167px;
         background-size: contain;
         background-repeat: no-repeat;
-        
 
 
 
-        
+
+
     }
 
     .sections_for_men {
         height: 167px;
         background-size: contain;
         background-repeat: no-repeat;
-        
-        
+
+
     }
 
     .sections_for_kids {
         height: 167px;
         background-size: contain;
         background-repeat: no-repeat;
-       
+
     }
 
     .sections_for_accesories {
         background-size: contain;
         background-repeat: no-repeat;
-        
+
     }
 
     .items {
@@ -631,7 +633,7 @@ body {
         padding-bottom: 219px;
         background-size: cover;
         background-repeat: no-repeat;
-        
+
     }
 
     .subscribe_block {
@@ -667,6 +669,207 @@ body {
     }
 
 
+}
+
+@media (max-width: 767px) {
+
+    .for_phone {
+        display: none;
+    }
+
+
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .right_header {
+        align-items: center;
+
+    }
+
+    .cover_img {
+        display: none;
+    }
+
+    .cover_block {
+        margin-top: 148px;
+        margin-bottom: 149px;
+    }
+
+    .cover_Brand {
+        font-size: 38px;
+
+    }
+
+    .cover_Brand2 {
+        font-size: 20px;
+    }
+
+    .cover_Brand3 {
+        font-size: 20px;
+    }
+
+    .sections {
+        grid-template-columns: repeat(1, minmax(318px, 343px));
+        margin-top: 64px;
+        grid-row-gap: 10px;
+
+    }
+
+    .sections_for_women {
+        grid-column: 1;
+        grid-row: 1;
+        height: 248px;
+
+    }
+
+    .sections_for_men {
+        grid-column: 1;
+        grid-row: 2;
+        height: 248px;
+
+    }
+
+    .sections_for_kids {
+        grid-column: 1;
+        grid-row: 3;
+        height: 248px;
+
+    }
+
+    .sections_for_accesories {
+        grid-column: 1;
+        grid-row: 4;
+        min-height: 111px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .items {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_description {
+        max-width: 359px;
+    }
+
+    .button_all_products {
+        margin-top: 40px;
+    }
+
+    .advantages {
+        margin-top: 96px;
+        gap: 46px;
+        padding-top: 48px;
+        padding-bottom: 81px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .header_adventage {
+        font-size: 19.96px;
+    }
+
+    .text_adventage {
+        margin-top: 14px;
+        font-size: 13.97px;
+    }
+
+    .subscribe {
+        padding-top: 54px;
+        padding-bottom: 109px;
+    }
+
+    .subscribe_text {
+
+        max-width: 320px;
+        color: rgb(34, 34, 36);
+
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .newsletter_h1 {
+        color: rgb(34, 34, 36);
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 153.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .newsletter_text {
+        color: rgb(34, 34, 36);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 153.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .email_input {
+        max-width: 180px;
+        max-height: 35px;
+        color: rgb(34, 34, 36);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-right: 25px;
+    }
+
+    .button_newsletter {
+        max-width: 75px;
+        max-height: 47.45px;
+        color: rgb(255, 255, 255);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .basement {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+
+    .text_basement {
+        color: rgb(251, 251, 251);
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
 
 
 
