@@ -100,16 +100,17 @@ body {
     background: rgb(34, 34, 34);
     padding: 0px;
     border: none;
+    cursor:pointer;
 
 }
 
 .menu_button:hover .dropdown_menu {
     display: block;
-    
+
     cursor: pointer;
     visibility: visible;
     transition-delay: 0s, 0s;
-    
+
 }
 
 .dropdown_menu {
@@ -118,14 +119,14 @@ body {
     background: rgb(255, 255, 255);
     z-index: 1;
     padding-left: 32px;
-    
+
     margin-top: 18px;
     transition-property: opacity, visibility;
     transition-duration: 0.5s, 0s;
     transition-delay: 0s, 0.5s;
-    
-    
-    
+
+
+
 }
 
 .down_menu {
@@ -133,7 +134,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 232px;
-    
+
 }
 
 .h1_dropdown_menu {
@@ -178,11 +179,13 @@ body {
     line-height: 17px;
     letter-spacing: 0%;
     text-align: left;
-    
+
 
 }
+
 .category_dropdown_menu:hover {
-    color: rgb(241, 228, 230);;
+    color: rgb(241, 228, 230);
+    ;
 
 }
 
@@ -351,6 +354,62 @@ body {
     grid-row-gap: 30px;
 
 }
+
+.dark_add_cart {
+    display: block;
+    position: relative;
+}
+
+/* Это центровка текста и иконки */
+/* Вынес в отдельный блок, что-бы не путаться */
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    color: #fff;
+    font-size: 40px;
+    transition: opacity .4s linear
+}
+
+span:hover {
+    opacity: 1;
+}
+
+.button_add_cart {
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 11px 15px 8px 13px;
+    gap: 11px;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.mask_button {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    cursor:pointer;
+}
+
+
 
 
 .product_description {
@@ -564,6 +623,7 @@ body {
     line-height: 17px;
     letter-spacing: 0%;
     text-align: center;
+    cursor:pointer;
 }
 
 .basement {
@@ -647,13 +707,14 @@ body {
         align-items: flex-end;
 
     }
+
     .dropdown_menu {
-        right:0;
-        
+        right: 0;
+
     }
 
 
-    
+
 
     .cover {
 
@@ -738,6 +799,7 @@ body {
 
     .items {
         margin-top: 110px;
+        align-items: center;
     }
 
     .catalog {
@@ -833,27 +895,28 @@ body {
         align-items: center;
 
     }
+
     .dropdown_menu {
-        right:0;
+        right: 0;
         margin-top: 26px;
         padding-left: 20px;
-        
+
     }
 
     .down_menu {
-        
+
         min-width: 150px
     }
 
     .h1_dropdown_menu {
         padding-top: 15px;
     }
+
     .sections_dropdown_menu {
         gap: 9px
-        
     }
 
-   
+
 
 
     .cover_img {
