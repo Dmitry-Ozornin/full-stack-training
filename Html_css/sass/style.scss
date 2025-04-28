@@ -1,0 +1,33 @@
+@import 'vars';
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+// стили для текста
+
+.color-text {
+    color: $colorText;
+}
+
+.nav {
+    display: flex;
+    gap: $gapGrid;
+    &_link {
+        text-decoration: none;
+    }
+}
+
+.content {
+    display: flex;
+    gap: $gapGrid;
+    width: $widthSite;
+
+    &_item{
+        width: $widthSite / 4;
+        height: 200px;
+        border: $border;
+    }
+}
+
