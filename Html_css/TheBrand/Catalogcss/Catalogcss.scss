@@ -1,4 +1,5 @@
 @import 'varsProduct';
+
 @keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -36,9 +37,15 @@
     }
 }
 
+input[type=checkbox] {
+    margin: 0;
+    border: 1px solid rgb(235, 235, 235);
+    width: 13px;
+    height: 13px;
 
+}
 
-a {
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -46,6 +53,8 @@ a {
 
 
 }
+
+
 
 
 body {
@@ -116,9 +125,11 @@ body {
 .dropdown_menu {
     visibility: hidden;
     position: absolute;
-    background: rgb(255, 255, 255);
-    z-index: 1;
+    
+    z-index: 3;
     padding-left: 32px;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            background: rgb(255, 255, 255);
 
     margin-top: 18px;
     transition-property: opacity, visibility;
@@ -236,17 +247,49 @@ body {
 }
 
 .sort {
-    height: 132px;
+    
     position: relative;
+    padding-top: 51px;
+    padding-bottom: 65px;
+
+
 
     &_filter {
+        width: 360px;
+        box-sizing: border-box;
+
         position: absolute;
         background: rgb(255, 255, 255);
+        z-index: 3;
+        
+ 
+        
+       
+
+
+
+        &[open] {
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            background: rgb(255, 255, 255);
+            top: 39px;
+            padding-top: 13px;
+        padding-left: 16px;
+        
+
+
+
+        }
 
         &_summary {
+            position: relative;
             display: flex;
             gap: 11px;
             align-items: center;
+            cursor: pointer;
+           
+           
+       
+
         }
 
         &_head {
@@ -256,10 +299,15 @@ body {
             line-height: 17px;
             letter-spacing: 0%;
             text-align: left;
+            cursor: pointer;
+
+
+        
         }
 
         &[open] &_head {
             color: $colorTextpink;
+          
 
 
         }
@@ -271,14 +319,20 @@ body {
     }
 
     &_box {
-        padding: 16px 16px 0 17px;
-        width: 360px;
+        padding-top: 16px;
+        
+        
+        
     }
 
     &_boxs {
+        
         display: flex;
         flex-direction: column;
         gap: 18px;
+        width: 327px;
+        
+        
 
         &_summary {
             list-style-type: none;
@@ -288,6 +342,8 @@ body {
             display: flex;
             flex-direction: column;
             gap: 18px;
+            cursor: pointer;
+            
         }
 
 
@@ -331,12 +387,266 @@ body {
         }
     }
 
+    &_TSP {
+        margin-left: 390px;
+        display: flex;
+        gap: 28px;
+        position: relative;
+        z-index: 22;
 
+
+
+
+        &_summary {
+            list-style-type: none;
+            color: rgb(111, 110, 110);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            z-index: 2;
+
+        }
+
+        &_checkboxes {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            background: rgb(255, 255, 255);
+            margin-top: 5px;
+            padding-top: 9px;
+            padding-left: 9px;
+            padding-bottom: 13px;
+            padding-right: 30px;
+            // padding: 9px 30px 13px 9px;
+            
+            z-index: 2;
+
+
+            &_checkbox {
+                display: flex
+;
+    align-items: center;
+    gap: 9px;
+
+                color: rgb(111, 110, 110);
+                font-family: $styletextROBOT;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0%;
+                text-align: left;
+                z-index: 2;
+
+
+            }
+        }
+
+    }
+
+    // расположения выпадания окон
+    .TRENDING_NOW {
+        // left: -8px
+    }
+
+    .SIZE {
+        left: 146px;
+    }
+
+    .PRICE {
+
+    }
 
 
 
 
 }
+
+// затеменение карточки при наведении
+.mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    color: #fff;
+    font-size: 40px;
+    transition: opacity 0.4s linear;
+  }
+  
+  .mask:hover {
+    opacity: 1;
+  }
+  
+  .button_add_cart {
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 11px 15px 8px 13px;
+    gap: 11px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .mask_button {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    cursor: pointer;
+  }
+
+//   конец когда затеменнеия карточки при наведении
+
+.catalog {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    z-index: 2;
+
+
+    &_items {
+        background-color: rgb(248, 248, 248);
+
+
+        &_product {
+            display: block;
+            position: relative;
+
+
+            &_description {
+
+
+                padding-left: 16px;
+                padding-top: 24px;
+                margin-bottom: 20px;
+
+                &_header {
+                    margin: 0;
+                    padding-left: 2px;
+                    color: rgb(0, 0, 0);
+
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    text-align: left;
+
+                }
+
+                &_text {
+                    margin-top: 12px;
+                    color: rgb(93, 93, 93);
+
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 17px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    width: 314px;
+
+                }
+
+                &_cost {
+
+                    margin-top: 18px;
+                    color: $colorPrice;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+   
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 96px;
+
+
+
+    &_table {
+        list-style-type: none;
+        display: flex;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 2px 2px;
+        width: 284px;
+        padding: 15px;
+        justify-content: center;
+        color: rgb(196, 196, 196);
+    
+
+
+        &_pages {
+            margin-left: 17px;
+            color: rgb(196, 196, 196);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+
+            &_last {
+                margin-right: 17px;
+                color: rgb(196, 196, 196);
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            &_last:hover{
+                color: $colorTextpink;
+            }
+
+        }
+
+        &_pages:hover {
+            color: $colorTextpink;
+        }
+
+       
+       
+
+    } 
+
+}
+
+.that_page {
+    color: black;
+}
+
 
 
 
@@ -346,9 +656,11 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
+    
   }
   
   .type_of_advantage {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
