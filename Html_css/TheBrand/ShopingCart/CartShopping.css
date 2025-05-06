@@ -168,7 +168,7 @@ body {
   padding-bottom: 128px;
   display: grid;
   grid-template-columns: repeat(2, 652px);
-  grid-template-rows: repeat(3, minmax(122px, 306px));
+  grid-template-rows: repeat(2, minmax(122px, 306px));
   -moz-column-gap: 128px;
        column-gap: 128px;
   row-gap: 40px;
@@ -176,6 +176,7 @@ body {
 }
 .basket_box {
   display: flex;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
 }
 .basket_QUOTE {
   overflow-x: hidden;
@@ -222,6 +223,94 @@ body {
 .basket_QUOTE_button:hover {
   background: rgb(241, 109, 127);
   color: white;
+  cursor: pointer;
+}
+.basket_total {
+  width: 360px;
+  background: rgb(245, 243, 243);
+  height: 214px;
+}
+.basket_total_sub {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  color: rgb(74, 74, 74);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 39px;
+  margin-right: 34px;
+}
+.basket_total_grand {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 12px;
+  margin-right: 37px;
+}
+.basket_total_grand_price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(241, 109, 127);
+}
+.basket_total_butten {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: none;
+  width: 273px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.basket_total_butten_topBorder {
+  border-top: 1px solid rgb(226, 226, 226);
+  margin-top: 21px;
+  margin-left: 43px;
+  padding-top: 17px;
+  display: flex;
+  justify-content: center;
+  width: 275px;
+}
+.basket_total_butten:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(241, 109, 127);
+}
+.basket_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.basket_bottom_button {
+  border: 1px solid rgb(164, 164, 164);
+  background: rgb(255, 255, 255);
+  width: 224px;
+  height: 49px;
+  margin-top: 32px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: center;
+  transition: 0.5s;
+}
+.basket_bottom_button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(241, 109, 127);
 }
 
 .card {
@@ -274,13 +363,16 @@ body {
 
 .border {
   border: 1px solid rgb(234, 234, 234);
-  padding: 1px 16px;
+  padding-left: 15px;
   margin-left: 19px;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
+  width: 44px;
+  height: 24.95px;
+  cursor: pointer;
 }
 
 .grid1 {
