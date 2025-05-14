@@ -210,6 +210,10 @@ body {
 
 .registration {
     padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex
+    ;
+        gap: 128px;
 
 }
 
@@ -219,6 +223,7 @@ body {
 
 
     &__heading {
+        
         color: rgb(34, 34, 34);
 
         font-size: 16px;
@@ -285,7 +290,86 @@ text-align: left;
 width: 359px;
     }
 
+    &__button {
+        width: 167px;
+        height: 50px;
+        background: rgb(241, 109, 127);
+        display: flex
+        ;
+            gap: 20px;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+          
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            border: none;
+            cursor: pointer;
+        
+    }
 
+
+}
+
+.perks {
+margin-top: 4px;
+    &__heading {
+        color: rgb(0, 0, 0);
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+    }
+
+    &__text{
+        margin-top: 22px;
+        color: rgb(0, 0, 0);
+
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+    }
+
+    &__list {
+        margin-top: 21px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        list-style-type: none;
+
+        &_text{
+            color: rgb(0, 0, 0);
+
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+
+
+
+        }
+
+        &_text::before{
+            content: url(check_mark.svg);
+            padding-right: 23px;
+        }
+
+       
+
+
+    }
+    &__list::before li {
+        content: '✔';
+    }
 }
 
 
