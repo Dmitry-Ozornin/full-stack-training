@@ -52,8 +52,10 @@ body {
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
+
 
 
 
@@ -410,6 +412,10 @@ body {
     text-align: left;
     margin: 0;
     cursor: pointer;
+}
+
+.img_cart {
+    width: 100%;
 }
 
 
@@ -1030,7 +1036,10 @@ body {
 
     .product_description {
         max-width: 359px;
+        
     }
+
+   
 
     .button_all_products {
         margin-top: 40px;

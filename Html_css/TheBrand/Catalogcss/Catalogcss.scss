@@ -126,7 +126,7 @@ body {
     visibility: hidden;
     position: absolute;
     
-    z-index: 3;
+    z-index: 10;
     padding-left: 32px;
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
             background: rgb(255, 255, 255);
@@ -835,9 +835,128 @@ body {
     animation: jello-horizontal 1s both;
 }
 
+@media (max-width: 1024px){
+
+.center {
+    padding-left: calc(50% - 496px);
+    padding-right: calc(50% - 496px);
+}
+
+.header {
+        padding-top: 19px;
+        padding-bottom: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+    .left_header {
+        gap: 41px;
+    }
+
+    .right_header {
+        align-items: flex-end;
+
+    }
+
+    .dropdown_menu {
+        right: 0;
+
+    }
+
+    .navugation{
+        justify-content: space-between;
+    }
+    
+
+    .sort {
+        padding-top: 24px;
+        padding-bottom: 40px;
+
+        &_filter {
+            left:  14.1vw;
+        }
+
+        &_TSP {
+            margin-left: 55vw;
+            z-index: 9;
+        }
+    }
+
+
+.catalog{
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+    justify-content: center;
+}
+
+.pagination {
+    margin-top: 40px;
+    margin-bottom: 63px;
+}
+.advantages {
+    display: flex
+;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.type_of_advantage {
+    padding: 0;
+}
+
+.subscribe {
+    display: flex
+;
+    flex-direction: column;
+    align-content: center;
+
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+}
+
+.subscribe_block {
+    margin: 0;
+}
+.newsletter_block {
+    margin: 0;
+}
+
+
+@media (max-width:768px){
+
+      .navugation{
+        padding-left: 16PX;
+        padding-right: 16PX;
+    }
+
+    .sort {
+
+        &_filter {
+            left:  16px;
+        }
+         &_TSP {
+            margin-left: 59vw;
+            
+        }
+
+}
+
+.basement {
+            justify-content: center;
+        gap: 316px;
+
+ 
+}
 
 
 
 
-
-
+}
+}

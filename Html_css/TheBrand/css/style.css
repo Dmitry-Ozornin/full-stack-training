@@ -32,6 +32,7 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .center {
@@ -339,6 +340,10 @@ body {
   text-align: left;
   margin: 0;
   cursor: pointer;
+}
+
+.img_cart {
+  width: 100%;
 }
 
 .product_description {
