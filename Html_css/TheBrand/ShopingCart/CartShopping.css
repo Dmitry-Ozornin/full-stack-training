@@ -571,4 +571,87 @@ body {
 
 .clicking:active {
   animation: jello-horizontal 1s both;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 496px);
+    padding-right: calc(50% - 496px);
+  }
+  .header {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_header {
+    gap: 41px;
+  }
+  .right_header {
+    align-items: flex-end;
+  }
+  .dropdown_menu {
+    right: 0;
+  }
+  .navugation {
+    justify-content: space-between;
+  }
+  .basket {
+    grid-template-columns: repeat(1, 734px);
+    justify-content: center;
+    padding-top: 59px;
+  }
+  .basket_total {
+    grid-row: 4;
+    grid-column: 1;
+    margin-left: 375px;
+    margin-top: 55px;
+    width: 360px;
+  }
+  .basket_QUOTE_input {
+    box-sizing: border-box;
+  }
+  .basket_bottom {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+  .card {
+    padding-right: 137px;
+  }
+  .grid3 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .subscribe_block {
+    margin: 0;
+  }
+  .newsletter_block {
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .navugation {
+    padding-left: 16PX;
+    padding-right: 16PX;
+  }
+  .basement {
+    justify-content: center;
+    gap: 316px;
+  }
 }/*# sourceMappingURL=CartShopping.css.map */
