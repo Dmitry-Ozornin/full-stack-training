@@ -1,4 +1,5 @@
 @import 'varsProduct';
+
 @keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -117,11 +118,11 @@ body {
 .dropdown_menu {
     visibility: hidden;
     position: absolute;
-    
+
     z-index: 3;
     padding-left: 32px;
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-            background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 
     margin-top: 18px;
     transition-property: opacity, visibility;
@@ -192,8 +193,9 @@ body {
     ;
 
 }
+
 .top {
-   
+
     padding-top: 59px;
     padding-bottom: 60px;
     background-color: $backgaroundNav;
@@ -211,9 +213,8 @@ body {
 .registration {
     padding-top: 64px;
     padding-bottom: 96px;
-    display: flex
-    ;
-        gap: 128px;
+    display: flex;
+    gap: 128px;
 
 }
 
@@ -223,7 +224,7 @@ body {
 
 
     &__heading {
-        
+
         color: rgb(34, 34, 34);
 
         font-size: 16px;
@@ -255,25 +256,24 @@ body {
     }
 
     &__cheackbox {
-        display: flex
-        ;
-            gap: 20px;
-            margin-top: 31px;
-            margin-bottom: 33px;
+        display: flex;
+        gap: 20px;
+        margin-top: 31px;
+        margin-bottom: 33px;
 
-            &_box {
-                display: flex;
-               
-                    gap: 10px;
-                    align-items: center;
-                    color: rgb(34, 34, 34);
+        &_box {
+            display: flex;
 
-font-size: 11px;
-font-weight: 300;
-line-height: 13px;
-letter-spacing: 0%;
-text-align: left;
-            }
+            gap: 10px;
+            align-items: center;
+            color: rgb(34, 34, 34);
+
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 13px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
 
     }
 
@@ -282,59 +282,59 @@ text-align: left;
         margin-bottom: 39px;
         color: rgb(177, 177, 177);
 
-font-size: 13px;
-font-weight: 300;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: left;
-width: 359px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 359px;
     }
 
     &__button {
         width: 167px;
         height: 50px;
         background: rgb(241, 109, 127);
-        display: flex
-        ;
-            gap: 20px;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            color: rgb(255, 255, 255);
-          
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0%;
-            text-align: left;
-            border: none;
-            cursor: pointer;
-        
+        display: flex;
+        gap: 20px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        border: none;
+        cursor: pointer;
+
     }
 
 
 }
 
 .perks {
-margin-top: 4px;
+    margin-top: 4px;
+
     &__heading {
         color: rgb(0, 0, 0);
-font-size: 24px;
-font-weight: 300;
-line-height: 29px;
-letter-spacing: 0%;
-text-align: left;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
     }
 
-    &__text{
+    &__text {
         margin-top: 22px;
         color: rgb(0, 0, 0);
 
-font-size: 24px;
-font-weight: 300;
-line-height: 29px;
-letter-spacing: 0%;
-text-align: left;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
     }
 
     &__list {
@@ -342,33 +342,39 @@ text-align: left;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        
+
         list-style-type: none;
 
-        &_text{
-            color: rgb(0, 0, 0);
+        &_text {
+            
+                       color: rgb(0, 0, 0);
+            
 
-font-size: 24px;
-font-weight: 300;
-line-height: 29px;
-letter-spacing: 0%;
-text-align: left;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 29px;
+            letter-spacing: 0%;
+            text-align: left;
 
 
 
         }
 
-        &_text::before{
+        &_text::before {
             content: url(check_mark.svg);
+            
             padding-right: 23px;
+            
         }
 
-       
+
 
 
     }
+
     &__list::before li {
         content: '✔';
+        
     }
 }
 
@@ -521,4 +527,146 @@ text-align: left;
 
 .clicking:active {
     animation: jello-horizontal 1s both;
+}
+
+@media (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 496px);
+        padding-right: calc(50% - 496px);
+    }
+
+    .header {
+        padding-top: 19px;
+        padding-bottom: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+    .left_header {
+        gap: 41px;
+    }
+
+    .right_header {
+        align-items: flex-end;
+
+    }
+
+    .dropdown_menu {
+        right: 0;
+
+    }
+
+    .navugation {
+        justify-content: space-between;
+    }
+
+    .registration {
+        padding-top: 40px;
+    }
+
+   
+    .perks {
+
+        &__heading{
+            color: rgb(0, 0, 0);
+font-size: 16px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+        }
+
+        &__text {
+            color: rgb(0, 0, 0);
+font-size: 16px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+
+        }
+
+        &__list {
+
+               
+            
+
+            &_text {
+                    display: flex
+;
+                              
+                color: rgb(0, 0, 0);
+
+font-size: 16px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+            }
+        }
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .type_of_advantage {
+        padding: 0;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .subscribe_block {
+        margin: 0;
+    }
+
+    .newsletter_block {
+        margin: 0;
+    }
+
+
+    @media (max-width:768px) {
+
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .registration {
+            gap: 22px;
+        }
+
+
+
+
+        .basement {
+            justify-content: center;
+            gap: 316px;
+
+
+        }
+
+
+
+
+    }
+
+
 }

@@ -439,4 +439,96 @@ body {
 
 .clicking:active {
   animation: jello-horizontal 1s both;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 496px);
+    padding-right: calc(50% - 496px);
+  }
+  .header {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_header {
+    gap: 41px;
+  }
+  .right_header {
+    align-items: flex-end;
+  }
+  .dropdown_menu {
+    right: 0;
+  }
+  .navugation {
+    justify-content: space-between;
+  }
+  .registration {
+    padding-top: 40px;
+  }
+  .perks__heading {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .perks__text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .perks__list_text {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .type_of_advantage {
+    padding: 0;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .subscribe_block {
+    margin: 0;
+  }
+  .newsletter_block {
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .registration {
+    gap: 22px;
+  }
+  .basement {
+    justify-content: center;
+    gap: 316px;
+  }
 }/*# sourceMappingURL=Registration.css.map */
