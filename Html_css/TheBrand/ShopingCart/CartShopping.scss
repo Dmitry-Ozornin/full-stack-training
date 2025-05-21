@@ -118,11 +118,11 @@ body {
 .dropdown_menu {
     visibility: hidden;
     position: absolute;
-    
+
     z-index: 3;
     padding-left: 32px;
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-            background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 
     margin-top: 18px;
     transition-property: opacity, visibility;
@@ -195,7 +195,7 @@ body {
 }
 
 .top {
-   
+
     padding-top: 59px;
     padding-bottom: 60px;
     background-color: $backgaroundNav;
@@ -224,6 +224,10 @@ body {
     &_box {
         display: flex;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+        & button{
+            margin-top: 28px;
+        }
 
     }
 
@@ -255,7 +259,7 @@ body {
             letter-spacing: 0%;
             text-align: left;
             border: 1px solid rgb(164, 164, 164);
-            width: 360px;
+            max-width: 360px;
             height: 44px;
             padding-left: 17px;
 
@@ -319,7 +323,8 @@ body {
             text-align: left;
             margin-top: 12px;
             margin-right: 37px;
-            &_price{
+
+            &_price {
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 19px;
@@ -332,7 +337,7 @@ body {
 
         }
 
-      
+
 
         &_butten {
             color: rgb(0, 0, 0);
@@ -361,9 +366,10 @@ body {
                 width: 275px;
             }
 
-            
+
 
         }
+
         &_butten:hover {
             color: rgb(255, 255, 255);
             background: rgb(241, 109, 127);
@@ -375,30 +381,29 @@ body {
 
     &_bottom {
 
-        display: flex
-;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 
-    &_button {
-        border: 1px solid rgb(164, 164, 164);
-        background: rgb(255, 255, 255);
-        width: 224px;
-height: 49px;
-margin-top: 32px;
-color: rgb(0, 0, 0);
-font-size: 14px;
-font-weight: 300;
-line-height: 17px;
-letter-spacing: 0%;
-text-align: center;
-transition: 0.5s;
-    }
+        &_button {
+            border: 1px solid rgb(164, 164, 164);
+            background: rgb(255, 255, 255);
+            width: 224px;
+            height: 49px;
+            margin-top: 32px;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: center;
+            transition: 0.5s;
+        }
 
-    &_button:hover {
-        color: rgb(255, 255, 255);
+        &_button:hover {
+            color: rgb(255, 255, 255);
             background: rgb(241, 109, 127);
 
-    }
+        }
 
 
     }
@@ -410,7 +415,8 @@ transition: 0.5s;
     padding-left: 31px;
     padding-right: 57px;
     width: 262px;
-    
+
+
 
     &_head {
         color: rgb(34, 34, 34);
@@ -436,10 +442,9 @@ transition: 0.5s;
                 text-align: left;
                 color: rgb(87, 87, 87);
                 padding: 0;
-                display: flex
-                ;
-                    align-items: center;
-                    gap: 5px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
 
                 &_price {
                     padding: 0;
@@ -451,9 +456,9 @@ transition: 0.5s;
                     text-align: left;
                 }
 
-               
 
-                
+
+
 
                 &_text {
                     color: rgb(111, 110, 110);
@@ -462,7 +467,7 @@ transition: 0.5s;
                     line-height: 26px;
                     letter-spacing: 0%;
                     text-align: left;
-                    
+
                 }
 
 
@@ -475,20 +480,27 @@ transition: 0.5s;
 
 }
 
+.cross {
+    margin-top: 28px;
+    width: 18px;
+    height: 18px;
+
+}
+
 // рамка у Quantity
 .border {
     border: 1px solid rgb(234, 234, 234);
     padding-left: 15px;
-    
+
     margin-left: 19px;
     font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: center;
-width: 44px;
-height: 24.95px;
-cursor: pointer;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 44px;
+    height: 24.95px;
+    cursor: pointer;
 
 }
 
@@ -528,20 +540,20 @@ cursor: pointer;
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    
-  }
-  
-  .type_of_advantage {
-   
+
+}
+
+.type_of_advantage {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 103px;
     padding-bottom: 104px;
     max-width: 359px;
-  }
-  
-  .header_adventage {
+}
+
+.header_adventage {
     color: rgb(251, 251, 251);
     font-size: 19.96px;
     font-weight: 400;
@@ -550,9 +562,9 @@ cursor: pointer;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0;
-  }
-  
-  .text_adventage {
+}
+
+.text_adventage {
     color: rgb(251, 251, 251);
     font-size: 16px;
     font-weight: 300;
@@ -561,7 +573,8 @@ cursor: pointer;
     text-align: center;
     margin-top: 16px;
     margin-bottom: 0;
-  }
+}
+
 .subscribe {
     /* ПРОШУ ПОДСКАЗКУ ПО ЭТОМУ БЛОКУ. КАК СДЕЛАТЬ , ЧТОБЫ ФОН РАСТЯГИВАЛСЯ В ШИРИНУ И НЕ ВЛИЯЛО НА ВИДИМЫЙ МАШТАБ КАРТИНКИ. ПРИ разрешении 1600 все ок , но у меня 2к монитор и я вижу просто верх картинки на фоне и часть человека */
     background-image: url(../img/subscribe_background.svg);
@@ -707,14 +720,14 @@ cursor: pointer;
     animation: jello-horizontal 1s both;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-.center {
-    padding-left: calc(50% - 496px);
-    padding-right: calc(50% - 496px);
-}
+    .center {
+        padding-left: calc(50% - 496px);
+        padding-right: calc(50% - 496px);
+    }
 
-.header {
+    .header {
         padding-top: 19px;
         padding-bottom: 18px;
         padding-left: 32px;
@@ -739,11 +752,11 @@ cursor: pointer;
 
     }
 
-    .navugation{
+    .navugation {
         justify-content: space-between;
     }
 
-.basket {
+    .basket {
         grid-template-columns: repeat(1, 734px);
         justify-content: center;
         padding-top: 59px;
@@ -752,12 +765,13 @@ cursor: pointer;
             grid-row: 4;
             grid-column: 1;
             margin-left: 375px;
-                    margin-top: 55px;
+            margin-top: 55px;
             width: 360px;
         }
+
         &_QUOTE {
 
-            &_input{
+            &_input {
                 box-sizing: border-box;
 
             }
@@ -765,80 +779,288 @@ cursor: pointer;
 
         &_bottom {
             grid-row: 3;
-                display: flex
-;
-    justify-content: center;
-    gap: 48px;
-        }
-}
-
-.card {
-    padding-right: 137px;
-}
-
-.grid3 {
-    grid-row: 4;
-    grid-column: 1;
-}
-    
-
-
-
-
-
-
-
-
-
-.subscribe {
-    display: flex
-;
-    flex-direction: column;
-    align-content: center;
-
-    gap: 48px;
-    padding-top: 64px;
-    padding-bottom: 140px;
-}
-
-.subscribe_block {
-    margin: 0;
-}
-.newsletter_block {
-    margin: 0;
-}
-
-
-@media (max-width:768px){
-
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-      .navugation{
-        padding-left: 16PX;
-        padding-right: 16PX;
-    }
-
-
-
-.basement {
+            display: flex;
             justify-content: center;
-        gap: 316px;
+            gap: 48px;
+        }
+    }
 
- 
+    .card {
+        padding-right: 137px;
+    }
+
+    .grid3 {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .subscribe_block {
+        margin: 0;
+    }
+
+    .newsletter_block {
+        margin: 0;
+    }
+
+
+    @media (max-width:768px) {
+
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .navugation {
+            padding-left: 16PX;
+            padding-right: 16PX;
+        }
+
+
+
+        .basement {
+            justify-content: center;
+            gap: 316px;
+
+
+        }
+
+
+
+
+    }
 }
 
+@media (max-width: 767px) {
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .top {
+        &_header {
+            text-align: center;
+        }
+    }
+
+    .basket {
+        grid-template-columns: repeat(1, 358px);
+        grid-template-rows: repeat(2, minmax(122px, 188px));
+        padding-top: 39px;
+        padding-bottom: 96px;
+        gap: 32px;
+
+        &_box {
+            box-shadow: 6px 4px 20px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+        & button {
+            margin-top: 14px;
+
+
+            & svg {
+                width: 9.88px;
+                height: 11.06px;
+            }
+        }
+
+        &_total {
+            grid-row: 5;
+            margin-left: 0px;
+            margin-top: 16px;
+        }
+
+        &_QUOTE{
+            &_head{
+                margin-top: 16px;
+            }
+        }
+
+        &_bottom{
+            
+
+            &_button{
+                border: 1px solid rgb(164, 164, 164);
+                margin-top: 39px;
+                width: 175px;
+height: 33px;
+
+color: rgb(87, 87, 87);
+
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0%;
+text-align: center;
+            }
+        }
+
+
+
+
+    }
+
+
+
+    .card {
+        padding-top: 13px;
+        padding-left: 17px;
+        padding-bottom: 38px;
+        padding-right: 10px;
+        width: max-content;
+
+
+        &_head {
+            color: rgb(34, 34, 34);
+            width: 143.86px;
+
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &_parameters {
+
+            &_list {
+                &_choice {
+                    font-size: 14px;
+
+                    line-height: 17px;
+
+                    &_text {
+                        font-size: 14px;
+
+                        line-height: 17px;
+                    }
+
+                    &_price {
+                        font-size: 14px;
+
+                        line-height: 17px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .border {
+        box-sizing: border-box;
+        margin-left: 15px;
+        color: rgb(101, 101, 101);
+
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 23.71px;
+        height: 14.82px;
+        padding-left: 0;
+        padding-right: 9px;
+    }
+
+
+
+
+
+
+
+
+    .subscribe {
+        padding-top: 64px;
+        padding-bottom: 100px;
+    }
+
+    .subscribe_text {
+
+        max-width: 320px;
+        color: rgb(34, 34, 36);
+
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .newsletter_h1 {
+        color: rgb(34, 34, 36);
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 153.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .newsletter_text {
+        color: rgb(34, 34, 36);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 153.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .email_input {
+        min-width: 220px;
+        max-height: 35px;
+        color: rgb(34, 34, 36);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-right: 25px;
+    }
+
+    .button_newsletter {
+        max-width: 75px;
+        max-height: 47.45px;
+        color: rgb(255, 255, 255);
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .basement {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 43px;
+        padding-bottom: 24px;
+    }
 
 
 
 }
-}
-
-
-
-
-
-
-
