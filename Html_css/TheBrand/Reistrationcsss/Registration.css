@@ -183,7 +183,7 @@ body {
   text-align: left;
 }
 .input__fields {
-  width: 360px;
+  max-width: 360px;
   padding-top: 13px;
   padding-bottom: 15px;
   padding-left: 17px;
@@ -530,5 +530,80 @@ body {
   .basement {
     justify-content: center;
     gap: 316px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .top_header {
+    text-align: center;
+  }
+  .registration {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 100px;
+  }
+  .perks__text {
+    width: 358px;
+  }
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+  .subscribe_text {
+    max-width: 320px;
+    color: rgb(34, 34, 36);
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .newsletter_h1 {
+    color: rgb(34, 34, 36);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 153.2%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .newsletter_text {
+    color: rgb(34, 34, 36);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 153.2%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .email_input {
+    min-width: 220px;
+    max-height: 35px;
+    color: rgb(34, 34, 36);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-right: 25px;
+  }
+  .button_newsletter {
+    max-width: 75px;
+    max-height: 47.45px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .basement {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 24px;
   }
 }/*# sourceMappingURL=Registration.css.map */
