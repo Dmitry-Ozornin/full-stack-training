@@ -731,7 +731,7 @@ body {
     margin: 0;
   }
 }
-@media (max-width: 1024px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .navugation {
     padding-left: 16PX;
     padding-right: 16PX;
@@ -742,8 +742,124 @@ body {
   .sort_TSP {
     margin-left: 59vw;
   }
+  .sort .SIZE {
+    left: 123px;
+  }
   .basement {
     justify-content: center;
     gap: 316px;
+  }
+}
+@media (max-width: 768px) and (max-width: 767px) {
+  .center {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navugation {
+    padding-top: 24px;
+    padding-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sort {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .sort_filter {
+    left: 32px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .sort_filter_head {
+    display: none;
+  }
+  .sort_filter svg {
+    width: 37px;
+    height: 25px;
+  }
+  .sort_filter[open] {
+    top: 12px;
+    z-index: 10;
+  }
+  .sort_TSP {
+    gap: 23px;
+    margin-left: 29vw;
+  }
+  .sort_TSP_summary {
+    color: rgb(111, 110, 110);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .catalog {
+    grid-template-columns: repeat(1, 360px);
+  }
+  .subscribe {
+    padding-top: 54px;
+    padding-bottom: 109px;
+  }
+  .subscribe_text {
+    max-width: 320px;
+    color: rgb(34, 34, 36);
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .newsletter_h1 {
+    color: rgb(34, 34, 36);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 153.2%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .newsletter_text {
+    color: rgb(34, 34, 36);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 153.2%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .email_input {
+    min-width: 220px;
+    max-height: 35px;
+    color: rgb(34, 34, 36);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-right: 25px;
+  }
+  .button_newsletter {
+    max-width: 75px;
+    max-height: 47.45px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .basement {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+}
+@media (max-width: 768px) and (max-width: 767px) and (max-width: 376px) {
+  .sort_filter {
+    left: 8px;
+  }
+  .sort_TSP {
+    margin-left: 26vw;
   }
 }/*# sourceMappingURL=Catalogcss.css.map */

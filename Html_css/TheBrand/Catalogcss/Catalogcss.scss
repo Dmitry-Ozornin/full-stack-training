@@ -125,11 +125,11 @@ body {
 .dropdown_menu {
     visibility: hidden;
     position: absolute;
-    
+
     z-index: 10;
     padding-left: 32px;
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-            background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 
     margin-top: 18px;
     transition-property: opacity, visibility;
@@ -247,7 +247,7 @@ body {
 }
 
 .sort {
-    
+
     position: relative;
     padding-top: 51px;
     padding-bottom: 65px;
@@ -261,10 +261,10 @@ body {
         position: absolute;
         background: rgb(255, 255, 255);
         z-index: 3;
-        
- 
-        
-       
+
+
+
+
 
 
 
@@ -273,8 +273,8 @@ body {
             background: rgb(255, 255, 255);
             top: 39px;
             padding-top: 13px;
-        padding-left: 16px;
-        
+            padding-left: 16px;
+
 
 
 
@@ -286,9 +286,9 @@ body {
             gap: 11px;
             align-items: center;
             cursor: pointer;
-           
-           
-       
+
+
+
 
         }
 
@@ -302,12 +302,12 @@ body {
             cursor: pointer;
 
 
-        
+
         }
 
         &[open] &_head {
             color: $colorTextpink;
-          
+
 
 
         }
@@ -320,19 +320,19 @@ body {
 
     &_box {
         padding-top: 16px;
-        
-        
-        
+
+
+
     }
 
     &_boxs {
-        
+
         display: flex;
         flex-direction: column;
         gap: 18px;
         width: 327px;
-        
-        
+
+
 
         &_summary {
             list-style-type: none;
@@ -343,7 +343,7 @@ body {
             flex-direction: column;
             gap: 18px;
             cursor: pointer;
-            
+
         }
 
 
@@ -427,15 +427,14 @@ body {
             padding-bottom: 13px;
             padding-right: 30px;
             // padding: 9px 30px 13px 9px;
-            
+
             z-index: 2;
 
 
             &_checkbox {
-                display: flex
-;
-    align-items: center;
-    gap: 9px;
+                display: flex;
+                align-items: center;
+                gap: 9px;
 
                 color: rgb(111, 110, 110);
                 font-family: $styletextROBOT;
@@ -461,9 +460,7 @@ body {
         left: 146px;
     }
 
-    .PRICE {
-
-    }
+    .PRICE {}
 
 
 
@@ -476,9 +473,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .mask {
+}
+
+.mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -489,13 +486,13 @@ body {
     color: #fff;
     font-size: 40px;
     transition: opacity 0.4s linear;
-  }
-  
-  .mask:hover {
+}
+
+.mask:hover {
     opacity: 1;
-  }
-  
-  .button_add_cart {
+}
+
+.button_add_cart {
     background: rgba(58, 56, 56, 0.86);
     border: 1px solid rgb(255, 255, 255);
     padding: 11px 15px 8px 13px;
@@ -503,9 +500,9 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .mask_button {
+}
+
+.mask_button {
     color: rgb(255, 255, 255);
     font-family: Lato;
     font-size: 14px;
@@ -515,7 +512,7 @@ body {
     text-align: left;
     margin: 0;
     cursor: pointer;
-  }
+}
 
 //   конец когда затеменнеия карточки при наведении
 
@@ -583,7 +580,7 @@ body {
         }
     }
 
-   
+
 
 }
 
@@ -604,7 +601,7 @@ body {
         padding: 15px;
         justify-content: center;
         color: rgb(196, 196, 196);
-    
+
 
 
         &_pages {
@@ -626,7 +623,7 @@ body {
                 text-align: left;
             }
 
-            &_last:hover{
+            &_last:hover {
                 color: $colorTextpink;
             }
 
@@ -636,10 +633,10 @@ body {
             color: $colorTextpink;
         }
 
-       
-       
 
-    } 
+
+
+    }
 
 }
 
@@ -656,20 +653,20 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    
-  }
-  
-  .type_of_advantage {
-   
+
+}
+
+.type_of_advantage {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 103px;
     padding-bottom: 104px;
     max-width: 359px;
-  }
-  
-  .header_adventage {
+}
+
+.header_adventage {
     color: rgb(251, 251, 251);
     font-size: 19.96px;
     font-weight: 400;
@@ -678,9 +675,9 @@ body {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0;
-  }
-  
-  .text_adventage {
+}
+
+.text_adventage {
     color: rgb(251, 251, 251);
     font-size: 16px;
     font-weight: 300;
@@ -689,7 +686,8 @@ body {
     text-align: center;
     margin-top: 16px;
     margin-bottom: 0;
-  }
+}
+
 .subscribe {
     /* ПРОШУ ПОДСКАЗКУ ПО ЭТОМУ БЛОКУ. КАК СДЕЛАТЬ , ЧТОБЫ ФОН РАСТЯГИВАЛСЯ В ШИРИНУ И НЕ ВЛИЯЛО НА ВИДИМЫЙ МАШТАБ КАРТИНКИ. ПРИ разрешении 1600 все ок , но у меня 2к монитор и я вижу просто верх картинки на фоне и часть человека */
     background-image: url(../img/subscribe_background.svg);
@@ -835,14 +833,14 @@ body {
     animation: jello-horizontal 1s both;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-.center {
-    padding-left: calc(50% - 496px);
-    padding-right: calc(50% - 496px);
-}
+    .center {
+        padding-left: calc(50% - 496px);
+        padding-right: calc(50% - 496px);
+    }
 
-.header {
+    .header {
         padding-top: 19px;
         padding-bottom: 18px;
         padding-left: 32px;
@@ -867,17 +865,17 @@ body {
 
     }
 
-    .navugation{
+    .navugation {
         justify-content: space-between;
     }
-    
+
 
     .sort {
         padding-top: 24px;
         padding-bottom: 40px;
 
         &_filter {
-            left:  14.1vw;
+            left: 14.1vw;
         }
 
         &_TSP {
@@ -887,51 +885,51 @@ body {
     }
 
 
-.catalog{
-    grid-template-columns: repeat(2, 360px);
-    gap: 16px;
-    justify-content: center;
+    .catalog {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 63px;
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .type_of_advantage {
+        padding: 0;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .subscribe_block {
+        margin: 0;
+    }
+
+    .newsletter_block {
+        margin: 0;
+    }
 }
 
-.pagination {
-    margin-top: 40px;
-    margin-bottom: 63px;
-}
-.advantages {
-    display: flex
-;
-    flex-direction: column;
-    gap: 48px;
-    padding-top: 48px;
-    padding-bottom: 64px;
-}
+@media (max-width:768px) {
 
-.type_of_advantage {
-    padding: 0;
-}
-
-.subscribe {
-    display: flex
-;
-    flex-direction: column;
-    align-content: center;
-
-    gap: 48px;
-    padding-top: 64px;
-    padding-bottom: 140px;
-}
-
-.subscribe_block {
-    margin: 0;
-}
-.newsletter_block {
-    margin: 0;
-}
-
-
-@media (max-width:768px){
-
-      .navugation{
+    .navugation {
         padding-left: 16PX;
         padding-right: 16PX;
     }
@@ -939,25 +937,182 @@ body {
     .sort {
 
         &_filter {
-            left:  16px;
+            left: 16px;
         }
-         &_TSP {
+
+        &_TSP {
             margin-left: 59vw;
-            
+
         }
 
-}
+        .SIZE {
+            left: 123px;
+        }
 
-.basement {
-            justify-content: center;
+    }
+
+    .basement {
+        justify-content: center;
         gap: 316px;
 
- 
+
+    }
+
+
+
+
+
+
+    @media (max-width: 767px) {
+        .center {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+
+
+        .navugation {
+            padding-top: 24px;
+            padding-bottom: 46px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .sort {
+            padding-top: 24px;
+            padding-bottom: 32px;
+
+            &_filter {
+                left: 32px;
+                width: fit-content;
+
+
+                &_head {
+                    display: none;
+                }
+
+                & svg {
+                    width: 37px;
+                    height: 25px;
+                }
+
+                &[open] {
+                    top: 12px;
+                    z-index: 10;
+                }
+            }
+
+
+
+            &_TSP {
+                gap: 23px;
+                margin-left: 29vw;
+
+
+                &_summary {
+                    color: rgb(111, 110, 110);
+
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+            }
+
+        }
+
+
+
+        .catalog {
+            grid-template-columns: repeat(1, 360px);
+        }
+
+        .subscribe {
+            padding-top: 54px;
+            padding-bottom: 109px;
+        }
+
+        .subscribe_text {
+
+            max-width: 320px;
+            color: rgb(34, 34, 36);
+
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .newsletter_h1 {
+            color: rgb(34, 34, 36);
+
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 153.2%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .newsletter_text {
+            color: rgb(34, 34, 36);
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 153.2%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .email_input {
+            min-width: 220px;
+            max-height: 35px;
+            color: rgb(34, 34, 36);
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding-right: 25px;
+        }
+
+        .button_newsletter {
+            max-width: 75px;
+            max-height: 47.45px;
+            color: rgb(255, 255, 255);
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .basement {
+            flex-direction: column-reverse;
+            gap: 40px;
+            padding-top: 43px;
+            padding-bottom: 9px;
+        }
+
+        @media (max-width:376px) {
+            .sort {
+                &_filter {
+                    left: 8px;
+                }
+
+                &_TSP {
+                    margin-left: 26vw;
+                }
+            }
+
+          
+
+        }
+
+    }
 }
-
-
-
-
-}
-}
-
