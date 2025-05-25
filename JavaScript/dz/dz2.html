@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // задание 1
+      // let num1 = Number(prompt("Введите первое число"));
+      // let num2 = Number(prompt("Введите второе число"));
+      // if (num1 <= 1 && num2 >= 3) {
+      //     console.log("соответствует");
+
+      // } else {
+      //      console.log("не соответствует");
+
+      // }
+
+      // // задание2
+      // let test = true;
+      // console.log(test ? '+++' : '---');
+
+      // задание 3
+      //   let num = Number(prompt("Введитте число от 1 до 31"));
+      //   if (num <= 10) {
+      //     console.log(` ${num} в первой декаде`);
+      //   } else if (num > 10 && num <= 20) {
+      //     console.log(` ${num} во второй декаде`);
+      //   } else if (num > 20 && num <= 31) {
+      //     console.log(` ${num} в третьей декаде`);
+      //   } else {
+      //     console.log("некорректное число");
+      //   }
+
+      // задание 4
+      let num = Number(prompt("введите число"));
+      let hundreds = Math.floor(num / 100);
+      let tens = Math.floor((num %100)/10);
+      let units = num % 10;
+      console.log(`В ${num} сотен ${hundreds}, десятков ${tens}, едениц ${units}`);
+      
+    </script>
+  </body>
+</html>
