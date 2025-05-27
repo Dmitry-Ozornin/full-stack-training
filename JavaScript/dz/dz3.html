@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1
+      //   function cube(number) {
+      //     return Math.pow(number, 3);
+      //   }
+      //   let res = cube(2) + cube(3);
+      //   console.log(res);
+
+      // 2
+      //   function tax(input) {
+      //     return input * 0.87;
+      //   }
+      //    let input = parseFloat(prompt("Введите вашу зарплату"));
+
+      //    if (isNaN(input)){
+      //     console.log("Значение не верно");
+
+      //    } else {
+      //     console.log(`Размер заработной платы за вычетом налогов равен ${tax(input)}`);
+
+      //    }
+
+      //   3
+      //   function max(a,b,c) {
+      //     let max = Math.max(a,b,c);
+      //     return max;
+
+      //   }
+
+      //   let a = Number(prompt('введите первое число'));
+      //   let b = Number(prompt('введите первое число'));
+      //   let c = Number(prompt('введите первое число'));
+      //   console.log(`Максимальное значение ${max(a,b,c)}`);
+
+      // 4
+
+      let a = Number(prompt("введите первое число"));
+      let b = Number(prompt("введите первое число"));
+      console.log(add(a,b));
+      console.log(subtraction(a,b));
+      console.log(multiple(a,b));
+      console.log(div(a,b));
+      
+      
+
+      add(a,b);
+      subtraction(a,b);
+      multiple(a,b);
+      div(a,b);
+
+      function add(a, b) {
+        if (isNaN(a) && isNaN(b)) {
+          return " вы ввели не число";
+        } else {
+          return a + b;
+        }
+        return a + b;
+      }
+      function subtraction(a, b) {
+        if (isNaN(a) && isNaN(b)) {
+          return " вы ввели не число";
+        } else {
+          return a - b;
+        }
+      }
+      function multiple(a, b) {
+        if (isNaN(a) && isNaN(b)) {
+          return " вы ввели не число";
+        } else {
+          return a * b;
+        }
+      }
+      function div(a, b) {
+        if (isNaN(a) && isNaN(b)) {
+          return " вы ввели не число";
+        } else {
+          return b !== 0 ? a / b : "Делить на ноль нельзя";
+        }
+      }
+    </script>
+  </body>
+</html>
