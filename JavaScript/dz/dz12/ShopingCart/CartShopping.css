@@ -165,26 +165,36 @@ body {
 
 .basket {
   padding-top: 96px;
-  padding-bottom: 128px;
   display: grid;
   grid-template-columns: repeat(2, 652px);
-  grid-template-rows: repeat(2, minmax(122px, 306px));
   -moz-column-gap: 128px;
        column-gap: 128px;
   row-gap: 40px;
   overflow-x: hidden;
 }
+.basket__products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.basket__products_img {
+  width: 262px;
+  height: 306px;
+}
 .basket_box {
   display: flex;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  box-sizing: border-box;
+  height: 306px;
+  width: 652px;
 }
 .basket_box button {
   margin-top: 28px;
 }
 .basket_QUOTE {
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  width: 360px;
 }
 .basket_QUOTE_head {
   margin-top: 17px;
@@ -232,6 +242,7 @@ body {
   width: 360px;
   background: rgb(245, 243, 243);
   height: 214px;
+  margin-top: 57px;
 }
 .basket_total_sub {
   display: flex;
@@ -294,8 +305,10 @@ body {
   background: rgb(241, 109, 127);
 }
 .basket_bottom {
+  margin-top: 72px;
   display: flex;
-  justify-content: space-between;
+  gap: 192px;
+  padding-bottom: 128px;
 }
 .basket_bottom_button {
   border: 1px solid rgb(164, 164, 164);
@@ -329,6 +342,7 @@ body {
   line-height: 29px;
   letter-spacing: 0%;
   text-align: left;
+  max-width: 200px;
 }
 .card_parameters_list {
   list-style-type: none;
@@ -390,8 +404,10 @@ body {
 }
 
 .grid2 {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .that_page {
@@ -609,24 +625,38 @@ body {
   }
   .basket {
     grid-template-columns: repeat(1, 734px);
-    justify-content: center;
     padding-top: 59px;
+    padding-bottom: 128px;
+    row-gap: 0;
+    justify-content: center;
+  }
+  .basket_box {
+    width: 734px;
   }
   .basket_total {
     grid-row: 4;
     grid-column: 1;
-    margin-left: 375px;
-    margin-top: 55px;
     width: 360px;
   }
   .basket_QUOTE_input {
     box-sizing: border-box;
   }
   .basket_bottom {
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     justify-content: center;
     gap: 48px;
+    margin-top: 62px;
+    padding-bottom: 64px;
+  }
+  .basket_bottom_button {
+    margin-top: 0px;
+  }
+  .grid2 {
+    flex-direction: row;
+    gap: 15px;
+    grid-row: 3;
+    grid-column: 1;
   }
   .card {
     padding-right: 137px;
@@ -656,8 +686,8 @@ body {
     padding-right: 16px;
   }
   .navugation {
-    padding-left: 16PX;
-    padding-right: 16PX;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .basement {
     justify-content: center;
@@ -674,16 +704,22 @@ body {
   }
   .basket {
     grid-template-columns: repeat(1, 358px);
-    grid-template-rows: repeat(2, minmax(122px, 188px));
     padding-top: 39px;
     padding-bottom: 96px;
-    gap: 32px;
   }
   .basket_box {
     box-shadow: 6px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    width: 358px;
+    height: 188px;
+  }
+  .basket__products_img {
+    width: 143.86px;
+    height: 188px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .basket button {
-    margin-top: 14px;
+    margin-top: 15px;
   }
   .basket button svg {
     width: 9.88px;
@@ -697,9 +733,12 @@ body {
   .basket_QUOTE_head {
     margin-top: 16px;
   }
+  .basket_bottom {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
   .basket_bottom_button {
     border: 1px solid rgb(164, 164, 164);
-    margin-top: 39px;
     width: 175px;
     height: 33px;
     color: rgb(87, 87, 87);
@@ -708,6 +747,9 @@ body {
     line-height: 14px;
     letter-spacing: 0%;
     text-align: center;
+  }
+  .grid2 {
+    flex-direction: column;
   }
   .card {
     padding-top: 13px;
@@ -719,7 +761,7 @@ body {
   }
   .card_head {
     color: rgb(34, 34, 34);
-    width: 143.86px;
+    max-width: 140px;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -738,6 +780,9 @@ body {
     font-size: 14px;
     line-height: 17px;
   }
+  .card_remove {
+    left: 17px;
+  }
   .border {
     box-sizing: border-box;
     margin-left: 15px;
@@ -751,6 +796,8 @@ body {
     height: 14.82px;
     padding-left: 0;
     padding-right: 9px;
+    text-align: center;
+    padding-left: 8px;
   }
   .subscribe {
     padding-top: 64px;

@@ -1,0 +1,192 @@
+$colorTextpink: rgb(241, 109, 127);
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+
+
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.catalog {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: minmax(587px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+.dark_add_cart {
+    display: block;
+    position: relative;
+}
+
+/* Это центровка текста и иконки */
+/* Вынес в отдельный блок, что-бы не путаться */
+.mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    color: #fff;
+    font-size: 40px;
+    transition: opacity .4s linear
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.button_add_cart {
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 11px 15px 8px 13px;
+    gap: 11px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mask_button {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    cursor: pointer;
+}
+
+.img_cart {
+    width: 100%;
+}
+
+
+
+
+.product_description {
+    padding: 24px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: rgb(248, 248, 248);
+    margin: 0px;
+
+}
+
+.header_desperation {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+
+}
+
+.text_desperation {
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+.cost_desperation {
+    color: rgb(241, 109, 127);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+.cart{
+     margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: minmax(587px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.delete {
+    background: rgba(58, 56, 56, 0.86);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 11px 15px 8px 13px;
+    gap: 11px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
