@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Book {
+        constructor(title, author, pages) {
+          this.title = title;
+          this.author = author;
+          this.pages = pages;
+        }
+        displayInfo(title, author, pages) {
+          console.log(`${this.title} ${this.author} ${this.pages}`);
+        }
+      }
+
+      const book1 = new Book("1984", "Джордж Оруэлл", 328);
+      book1.displayInfo();
+
+      class Student {
+        constructor(name, age, grade) {
+          this.name = name;
+          this.age = age;
+          this.grade = grade;
+        }
+        displayInfo(name, age, grade) {
+          console.log(`${this.name} ${this.age} ${this.grade}`);
+        }
+      }
+
+      const student1 = new Student("John Smith", 16, "10th grade");
+      student1.displayInfo(); // Вывод: Name: John Smith, Age: 16, Grade: 10th grade
+      const student2 = new Student("Jane Doe", 17, "11th grade");
+      student2.displayInfo(); // Вывод: Name: Jane Doe, Age: 17, Grade: 11th grade
+    </script>
+  </body>
+</html>

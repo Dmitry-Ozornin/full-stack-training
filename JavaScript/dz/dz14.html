@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sdaads">
+      <div class="fdfwf"></div>
+      <div class="root">2</div>
+      <div class="efwe">3</div>
+    </div>
+
+    <script>
+      const arr = [1, 5, 7, 9];
+      const min = Math.min(...arr);
+      console.log(min);
+
+      function createCounter() {
+        let a = 0;
+        return {
+          increment() {
+            return ++a;
+          },
+          decrement() {
+            return --a;
+          },
+          getValue() {
+            return a;
+          },
+        };
+      }
+
+      const count = createCounter();
+      console.log(count.increment());
+      console.log(count.increment());
+      console.log(count.increment());
+      console.log(count.decrement());
+      console.log(count.getValue());
+
+      document.addEventListener("DOMContentLoaded", (e) => {
+        
+
+        function findElementByClass(root, className) {
+          if (root.classList.contains(className)) {
+            return root;
+          }
+          for (let i = 0; i < root.children.length; i++) {
+            const found = findElementByClass(root.children[i], className);
+            if (found) {
+              return found;
+            }
+          }
+          return null; // Если элемент с таким классом не найден
+        }
+
+        const classEl = document.querySelector(".sdaads");
+        const search = findElementByClass(classEl, "root");
+        console.log(search);
+
+
+        // body
+      });
+    </script>
+  </body>
+</html>
