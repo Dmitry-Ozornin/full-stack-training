@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const obj1 = {
+      //     name: "one",
+      //   };
+
+      //   const obj2 = {
+      //     name: "two",
+      //   };
+
+      //   Object.setPrototypeOf(obj2, obj1);
+      //   function getProrotipeChain(obj) {
+      //     const prototipeChain = [];
+      //     let currentObj = obj;
+      //     while (currentObj !== null) {
+      //       prototipeChain.push(currentObj);
+      //       currentObj = Object.getPrototypeOf(currentObj);
+      //     }
+      //     return prototipeChain;
+      //   }
+
+      //   const prototipeChain = getProrotipeChain(obj2);
+      //   console.log(prototipeChain);
+
+      //   class Animal {
+      //     constructor(name) {
+      //       this.name = name;
+      //     }
+      //     speak(){
+      //         console.log(`${this.name} животное`);
+
+      //     }
+      //   }
+
+      //   class Dog extends Animal {
+      //     constructor(name, breed) {
+      //         super(name);
+      //         this.breed = breed;
+
+      //     }
+      //     fetch(){
+      //         console.log(`${this.name} собака`);
+
+      //     }
+      //   }
+
+      //   const animal1 = new Animal('Животное');
+      //   animal1.speak();
+      //   const dog1 = new Dog('scat', 'staff');
+      //   dog1.speak();
+      //   console.log(dog1.breed);
+      //   dog1.fetch();
+
+      class Product {
+        constructor(name, price) {
+          this.name = name;
+          this.price = price;
+        }
+
+        // addItem( quantity) {
+
+        //   if (quantity < 1) {
+        //     this.quantity = 1;
+        //   } else {
+        //     this.quantity = quantity;
+        //   }
+        //   console.log(`Добавлен товар ${this.name} в количестве ${this.quantity} со стоимостью ${this.price}`);
+        // }
+      }
+
+      class ShoppingCart {
+        constructor(customerName, initialTotalCost) {
+          this.customerName = customerName;
+          this.totalCost = initialTotalCost;
+          this.items = [];
+        }
+
+        addItem(product, quantity = 1) {
+          this.totalCost += product.price * quantity;
+          this.items.push({ product, quantity });
+        }
+
+        getCurrentTotalCost() {
+          return this.totalCost;
+        }
+
+        cheack() {
+          console.log(`заказ оформлен ${this.customerName}. Общая стоимость заказа: ${this.totalCost}. Спасибо за покупку`);
+        }
+      }
+
+      const product1 = new Product("soho", 100);
+      const product2 = new Product("soho", 150);
+
+      const zakaz = new ShoppingCart("Saha", 0);
+      zakaz.addItem(product1, 2);
+      zakaz.addItem(product2);
+      zakaz.addItem(product1, 1);
+      console.log(`общая ${zakaz.getCurrentTotalCost()}`);
+
+      zakaz.cheack();
+    </script>
+  </body>
+</html>

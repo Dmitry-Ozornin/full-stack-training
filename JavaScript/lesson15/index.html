@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">Список</h1>
+    <button class="sort">Сортировать по имени</button>
+    <ul class="users">
+      <li class="User">
+        <h2>имя</h2>
+        <h3>ник</h3>
+        <p type="email">email</p>
+        <p>адрес</p>
+        <p>геопозицция</p>
+      </li>
+    </ul>
+
+    <script>
+      //   function delayedMessage(message, delay) {
+      //     setTimeout(() => {
+      //       console.log(message);
+      //     }, delay);
+      //   }
+
+      //   delayedMessage("Сообщение 1", 2000);
+      //   delayedMessage("Сообщение 2", 1000);
+      //   delayedMessage("Сообщение 3", 3000);
+
+      //   const tasks = [
+      //     { name: "task 1", time: 1000 },
+      //     { name: "task 2", time: 2000 },
+      //     { name: "task 3", time: 3000 },
+      //     { name: "task 4", time: 4000 },
+      //     { name: "task 5", time: 5000 },
+      //   ];
+
+      //   function task(task, time) {
+      //     setTimeout(() => {
+      //       console.log(task);
+      //     }, time);
+      //   }
+
+      //   tasks.forEach((element) => {
+      //     task(element.name, element.time);
+      //   });
+
+      //   function loadData(url) {
+      //     const xhr = new XMLHttpRequest();
+      //     xhr.onreadystatechange = function () {
+      //       if (xhr.readyState === 4 && xhr.status === 200) {
+      //         console.log(xhr.responseText);
+      //       }
+      //       xhr.open("GET", utl, true);
+      //       //   xhr.send();
+
+      //       loadData("url адрес");
+      //     };
+      //   }
+
+      //   fetch(url)
+      //     .then((result) => {
+      //       if (result.ok) {
+      //         return result.text;
+      //       } else {
+      //         throw new Error("Ошибка не все ок");
+      //       }
+      //     })
+      //     .then((data) => {
+      //       console.log(data);
+      //     })
+      //     .catch((err) => {
+      //         console.error("Много ошибок");
+      //     });
+
+      // const url = "https://jsonplaceholder.typicode.com/users";
+      // async function getData(url) {
+      //   try {
+      //     const response = await fetch(url);
+      //     const data = await response.json();
+      //     console.log(data);
+
+      //     return data;
+      //   } catch (error) {
+      //     console.log(error.message);
+      //   }
+      // }
+
+      document.addEventListener("DOMContentLoaded", async (e) => {
+        const list = document.querySelector(".users");
+        function render(data) {
+          list.innerHTML = "";
+          data.forEach((element) => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `
+          <li class="User">
+        <h2>${element.name}</h2>
+        <h3>${element.username}</h3>
+        <p type="${element.email}"> email</p>
+        <p>улица ${element.address.street}, дом ${element.address.suite}, город ${element.address.city}, индекс ;${element.address.zipcode}</p>
+        <p>lat: ${element.address.geo.lat},
+        lng: ${element.address.geo.lng}</p>
+          </li>
+          `
+            list.append(listItem);
+          });
+        }
+
+        const sortedUsersByName = (users) => {
+          const sortedUsers = users.sort((a, b) => {
+            const nameA = a.name.toLowerCase();
+            const nameB = b.name.toLowerCase();
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+            return 0;
+          });
+          render(sortedUsers);
+        };
+
+        // body
+
+        fetch("https://jsonplaceholder.typicode.com/users")
+          .then((result) => result.json())
+
+          .then((data) => {
+            render(data);
+            const sort = document.querySelector(".sort");
+            sort.addEventListener("click", function (e) {
+              sortedUsersByName(data);
+            });
+          })
+          .catch((err) => {
+            console.error("JОшибк ");
+          });
+
+        // body
+
+        // body
+      });
+
+      
+    </script>
+  </body>
+</html>
