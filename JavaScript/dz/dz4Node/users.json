@@ -1,0 +1,33 @@
+[
+  {
+    "maxUserId": 5
+  },
+  {
+    "id": 1,
+    "firstname": "Pasha",
+    "secondName": "Ivanov",
+    "age": 10,
+    "city": "moscow"
+  },
+  {
+    "id": 2,
+    "firstname": "Pasha",
+    "secondName": "Ivanov",
+    "age": 10,
+    "city": "moscow"
+  },
+  {
+    "id": 4,
+    "firstname": "Pasha",
+    "secondName": "Ivanov",
+    "age": 10,
+    "city": "moscow"
+  },
+  {
+    "id": 5,
+    "firstname": "Pasha",
+    "secondName": "Ivanov",
+    "age": 10,
+    "city": "moscow"
+  }
+]
