@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+.InputComment {
+  width: 300px;
+ min-height: 100px;
+ resize: none
+
+}
+
+.addComment {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+  width: 500px;
+
+  &__comment {
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+  }
+
+  &__delete {
+    width: 100px;
+  }
+}
