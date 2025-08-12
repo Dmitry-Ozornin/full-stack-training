@@ -1,0 +1,52 @@
+.converter {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.converter__form {
+  width: 700px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 300px;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.formAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formAdd__inputText {
+  width: 400px;
+}
+.formAdd__buttonAdd {
+  width: 400px;
+}
+
+.buttonAdd {
+  width: 400px;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+.cards__cardBox {
+  width: 250px;
+}
+.cards__cardBox_box {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=index.css.map */
