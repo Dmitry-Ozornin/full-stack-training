@@ -2,7 +2,7 @@ function InputTask({text,handleInput,addTodo}) {
     return ( 
         <div>
         <input type="text" onChange={(e) => handleInput(e.target.value)} value={text} />
-        <button onClick={addTodo}>добавть задачу</button>
+        <button onClick={addTodo}>добавить задачу</button>
       </div>
      );
 }
