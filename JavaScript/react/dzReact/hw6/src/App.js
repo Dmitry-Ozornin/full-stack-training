@@ -1,22 +1,24 @@
-import logo from './logo.svg';
-import { Provider } from "react-redux";
-import './App.css';
-import { store } from './components/store/store';
-import { AddProduct } from './components/AddProduct';
-import { EditProduct } from './components/EditProduct';
-import { ListProduct } from './components/ListProduct';
+import { useState } from "react";
+import "./App.css";
+import AddProduct from "./components/addProduct";
+import ListProducts from "./components/ListProducts";
+import { addProduct } from "./store/productSlice";
+import { useDispatch } from "react-redux";
 
 function App() {
-  return (
-    <Provider store={store}>
-      <div>
-        <h1>Каталог продуктов</h1>
-        <AddProduct/>
-        <EditProduct/>
-        <ListProduct/>
-      </div>
+  const [productsItem, setProductsItem] = useState([]);
+  const [text, setText] = useState("");
 
-    </Provider>
+  const dispatch = useDispatch();
+  const addItem = () => {
+    dispatch(addProduct({ text }));
+  };
+
+  return (
+    <div className="App">
+      <AddProduct  addProduct={addItem} />
+      <ListProducts text={text}/>
+    </div>
   );
 }
 
