@@ -44,4 +44,8 @@
   min-height: 200px;
   flex-direction: column;
   min-width: 300px;
+}
+
+.noVisibility {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

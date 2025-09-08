@@ -5,6 +5,8 @@ import ChangeItem from "./changeItem";
 function ProductItem({ id, product, about, price, aval }) {
   const [visibilaty, setVisibilaty] = useState("noVisibility");
 
+  
+
   const dispatch = useDispatch();
   const changeClick = () => {
     if (visibilaty === "noVisibility") {
@@ -23,7 +25,7 @@ function ProductItem({ id, product, about, price, aval }) {
       <div className="btn">
         <button onClick={() => dispatch(deleteProduct({ id }))}>Удалить</button>
         <button onClick={() => dispatch(changeAval({ id }))}>Сменить доступность на {aval ? "Не доступен" : "Доступен"}</button>
-        <button onClick={changeClick}> Изменить</button>
+        <button onClick={changeClick}> {visibilaty === "noVisibility" ? "Открыть изменения" : "Закрыть изменения"}</button>
       </div>
 
       <ChangeItem visibilaty={visibilaty} id={id} />
