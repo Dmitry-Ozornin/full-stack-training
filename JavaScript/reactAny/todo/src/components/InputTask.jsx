@@ -1,4 +1,5 @@
 function InputTask({text,handleInput,addTodo}) {
+  
     return ( 
         <div>
         <input type="text" onChange={(e) => handleInput(e.target.value)} value={text} />

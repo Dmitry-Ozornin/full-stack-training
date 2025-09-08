@@ -1,23 +1,15 @@
-import { useState } from "react";
 import "./App.css";
 import AddProduct from "./components/addProduct";
-import ListProducts from "./components/ListProducts";
-import { addProduct } from "./store/productSlice";
-import { useDispatch } from "react-redux";
+import ProductList from "./components/productsList";
+
 
 function App() {
-  const [productsItem, setProductsItem] = useState([]);
-  const [text, setText] = useState("");
-
-  const dispatch = useDispatch();
-  const addItem = () => {
-    dispatch(addProduct({ text }));
-  };
-
   return (
-    <div className="App">
-      <AddProduct  addProduct={addItem} />
-      <ListProducts text={text}/>
+    <div  className="center">
+      <AddProduct />
+      <div className="listProducts">
+        <ProductList />
+      </div>
     </div>
   );
 }

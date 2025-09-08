@@ -1,24 +1,38 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  products: [],
-};
-
-export const productSlice = createSlice({
+const productSlice = createSlice({
   name: "products",
-  initialState: initialState,
+  initialState: {
+    products: [],
+  },
   reducers: {
-    addProduct(state, action) {
+    addProducts(state, action) {
       state.products.push({
         id: state.products.length + 1,
-        name: action.payload.nameProduct,
-        description: action.payload.description,
+        product: action.payload.product,
+        about: action.payload.about,
         price: action.payload.price,
-        availability: action.payload.availability,
+        aval: action.payload.aval,
       });
+    },
+    deleteProduct(state, action) {
+      state.products = state.products.filter((item) => item.id !== action.payload.id);
+    },
+    changeAval(state, action) {
+      const changeAval = state.products.find((item) => item.id === action.payload.id);
+      changeAval.aval = !changeAval.aval;
+    },
+    changeTheProduct(state, action) {
+      const index = state.products.findIndex((item) => item.id === action.payload.id);
+
+      state.products[index].product = action.payload.newProduct !== "" ? action.payload.newProduct : state.products[index].product;
+
+      state.products[index].about = action.payload.newAbout !== "" ? action.payload.newAbout : state.products[index].about;
+
+      state.products[index].price = action.payload.newPrice !== "" ? action.payload.newPrice : state.products[index].price;
     },
   },
 });
 
-export const { addProduct } = productSlice.actions;
+export const { addProducts, deleteProduct, changeAval, changeTheProduct } = productSlice.actions;
 export default productSlice.reducer;
